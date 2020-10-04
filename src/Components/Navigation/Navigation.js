@@ -4,7 +4,7 @@ import About from './nav_assets/About';
 import Home from './nav_assets/Home';
 import Contact from './nav_assets/Contact';
 import Courses from './nav_assets/Courses';
-import Logo from './Image/ss3.png'
+import Logo from './Image/sc7.png'
 const Navigation =()=> {
 
     return (
