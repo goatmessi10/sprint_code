@@ -1,0 +1,27 @@
+.aboutus-div{
+    height: 300px;
+    width: 100%;
+    color : #c9c0c0 ;
+    padding: 20px;
+    margin: auto;
+    
+}
+.right-border{
+    border-right: 1px solid; 
+}
+.span-element{
+    font-size: 20px;
+    font-weight: 700;
+    color: #BDBDBD;
+    margin: auto;
+}
+
+.p-tag{
+font-weight: 50;
+text-shadow: white;
+}
+
+.warpper-div{
+    padding: 20px;
+    display: flex;
+}
