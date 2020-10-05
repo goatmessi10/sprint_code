@@ -3,7 +3,7 @@ import {Button,  Modal} from 'react-bootstrap'
 import TextField from '@material-ui/core/TextField';
 import { NativeSelect} from '@material-ui/core';
 import './Register.css'
-import scLogoBlack from '../../assets/scLogoBlack.png'
+import scLogoBlack from '../../Assets/scLogoBlack.png'
   
 
 const Register = () => {
@@ -21,7 +21,9 @@ const Register = () => {
 
     return (
         <div >
-            <Button onClick={()=>handleModal()} >Register</Button>
+            {/* <Button  className="registeration-button" onClick={()=>handleModal()} >Register</Button> */}
+            <button className="registeration-button" onClick={()=>handleModal()} > Register </button>
+
             <Modal className='register-popup-back' show={state.show} >
                <Modal.Body className='register-pop-up'>
             <div>

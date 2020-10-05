@@ -1,0 +1,36 @@
+
+.introduction-cointainer{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    maRgin-top:10PX;
+  }
+
+.introduction-cointainer-text{
+    width: 300px;
+}
+
+.introduction-cointainer-image{
+    width: 400px;
+    height: 300px;
+  }
+
+.introduction-cointainer-image img {
+    width: 100%;
+    min-height: 100%;
+}
+.introduction-text-heading{
+  margin-top: 40px;
+    font-family: inherit;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 82px;
+    color: #212121;
+}
+  
+
+
+
+
+
