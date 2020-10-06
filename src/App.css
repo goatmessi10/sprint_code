@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext'); 
+
+.body
+{
+  font-family: Muli,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
 .App {
-  height: 100%;
-  width: 100%;
+  text-align: center;
+}
+
+.courses-cointainer
+{
+  padding: 10px;
+}
+      
+.courses-heading{
+  margin: 40px 0px;
+  text-align: initial;
+  padding-left: 70px;
 }
