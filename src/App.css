@@ -10,13 +10,25 @@
   text-align: center;
 }
 
-.courses-cointainer
+.courses-cointainer                                                     
 {
-  padding: 10px;
+  padding: 20px;
 }
       
 .courses-heading{
   margin: 40px 0px;
-  text-align: initial;
-  padding-left: 70px;
+}
+
+.courseHeadingBanner{
+  height: 100px;
+  width:100%;
+}
+
+.courseHeadingBannerName{
+  position: absolute;
+  margin-top: px;
+  margin-top: -70px;
+  padding-left: 90px;
+  color: white;
+  
 }
