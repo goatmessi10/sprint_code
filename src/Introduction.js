@@ -10,7 +10,7 @@ function Introduction() {
             
             <div className="introduction-cointainer">
                 <div className="introduction-cointainer-text">
-                    <h3 class="introduction-text-heading">Think twice Code once</h3>
+                    <h3 className="introduction-text-heading">Think twice Code once</h3>
                     
                     <Register/>
                     
