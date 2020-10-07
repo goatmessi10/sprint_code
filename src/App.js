@@ -6,6 +6,9 @@ import Navigation from './Components/Navigation/Navigation';
 
 import Courses from './Courses';
 import Introduction from './Introduction'
+import CourseBanner from './Assets/templatesample/coursesBanner1.jpg';
+
+
 const App = ()=> {
 
 
@@ -28,7 +31,10 @@ const App = ()=> {
     <div  className='App'>
         <Navigation/>
         <Introduction/>
-        <div className="courses-heading"><h2>Courses we offer</h2></div>
+        <div className="courses-heading">
+          <img className="courseHeadingBanner" alt ="course banner" src={CourseBanner}/>
+
+          <h2 className="courseHeadingBannerName">Courses we offer</h2></div>
         <div className="courses-cointainer">  <Courses/>  </div>
       
         <Contact/>
