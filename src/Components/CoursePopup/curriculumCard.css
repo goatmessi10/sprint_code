@@ -1,0 +1,23 @@
+.curriculum-card-cointainer{
+    text-align: initial;
+    background: #f5f6fa;
+    padding: 5px;
+    font-family: Muli,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #4a4a4a;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+   
+    margin-left: 5px;
+    margin-top: 6px;
+    
+}
+.curriculum-card-cointainer:hover{
+    box-shadow: 0px 0px 6px 0px #00000059;
+}
+.close-popup{
+    display: none;
+}
