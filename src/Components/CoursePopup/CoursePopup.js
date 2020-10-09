@@ -1,20 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './CoursePopup.css';
 import CurriculumCard  from './CurriculumCard';
-import CourseData from './CourseData'
+import CourseData from './CourseData';
 
 
 
 
-function CoursePopup() {
+function CoursePopup(props) {
 
-let curriculumCard = ["course-curriculum-popup-backgroud"];
-const [state, setstate] = useState(curriculumCard)
-
+    
+const [backGroundState, setBackGroundState] = useState(["course-curriculum-popup-backgroud"])
+const[curriculumState, setcurriculumState] = useState(["course-curriculum-popup-cointainer"])
+ 
 
 let WeekStructure  = null;
+if(props.courseType ==="CppFoundation"){
+    WeekStructure = CourseData.CppFoundation.week;
+}else if(props.courseType ==="JavaFoundation"){
+    WeekStructure = CourseData.JavaFoundation.week;
+}else if(props.courseType ==="PythonFoundation"){
+    WeekStructure = CourseData.PythonFoundation.week;
+}
 
-WeekStructure = CourseData.week; 
+ 
 
 let card=null;
  
@@ -24,28 +32,31 @@ let card=null;
                     CurriculumItems = {week.day}
                     week = {index+1}
                     heading = {week.weakTarget}
+                    key={index}
                     />
             )
     })
    
    
     const closePopUp=()=>{
-      let temp = [...state ,"close-popup"]
-      console.log(state) 
-      setstate(temp)     
+     
+        setBackGroundState(["course-curriculum-popup-backgroud","close-popup"])     
+
+        setcurriculumState(["course-curriculum-popup-cointainer","close-popup"])
     }
   
     return (
         <div>
-            <div className={state.join(' ')}  onClick={()=>closePopUp()}>
-                <div className="course-curriculum-popup-cointainer">
-                    <div style={{marginBottom:"10px"}}> Courese Curriculum </div>
-                    <div className="week-cointainer">
-                    { card }
-                    </div>
-                    
+            <div className={backGroundState.join(' ')}  onClick={()=> closePopUp()}> </div>
+
+            <div className={curriculumState.join(' ')} >
+                <div style={{marginBottom:"10px"}}> Course Curriculum </div>
+                <div className="week-cointainer">
+                { card }
                 </div>
+                
             </div>
+            
         </div>
     )
 }

@@ -30,7 +30,7 @@ const App = ()=> {
   return (
     <div  className='App'>
 
-        <CoursePopup/>        
+                
         <Navigation/>
         <Introduction/>
         <div className="courses-heading">

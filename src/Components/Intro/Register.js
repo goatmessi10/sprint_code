@@ -16,11 +16,11 @@ const Register = () => {
 
     const handleModal = ()=>{
         const currentState = state.show ;
-        setstate({show : !currentState}) ;
+        setstate({show : !currentState});
     }
 
     return (
-        <div >
+        <div>
             {/* <Button  className="registeration-button" onClick={()=>handleModal()} >Register</Button> */}
             <button className="registeration-button" onClick={()=>handleModal()} > Register </button>
 
@@ -54,10 +54,10 @@ const Register = () => {
         
         {/* <FormHelperText>Some important helper text</FormHelperText> */}
         <div style={{margin :'5px',padding:'inherit'}}>
-        <Button style={{marginRight:'10px' }} onClick={()=>handleModal()}>Enter</Button>
+        <Button style={{marginRight:'10px' }} onClick = {()=>handleModal()} >Enter</Button>
         <Button onClick={()=>handleModal()}>Close</Button>
         </div>
-               </Modal.Body>
+            </Modal.Body>
                
                   
             </Modal>
