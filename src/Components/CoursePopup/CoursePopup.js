@@ -39,7 +39,7 @@ let card=null;
         <div>
             <div className={state.join(' ')}  onClick={()=>closePopUp()}>
                 <div className="course-curriculum-popup-cointainer">
-                    <div style={{marginBottom:"10px"}}> Courese Curriculum </div>
+                    <div style={{marginBottom:"10px"}}> Course Curriculum </div>
                     <div className="week-cointainer">
                     { card }
                     </div>

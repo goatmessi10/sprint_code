@@ -1,9 +1,7 @@
 import HorizontalSplitIcon from '@material-ui/icons/HorizontalSplit';
 import React, { useState } from 'react';
-import Logo from "./Image/ss3.png"
 import './Navigation.css';
-
-
+import {Link} from 'react-scroll'
 const Navigation =()=> {
     let navBarClass = ["topnav"]
      const [state, setstate] = useState(navBarClass)
@@ -18,20 +16,17 @@ const Navigation =()=> {
             }
         setstate(navBarChanged);
     }
-
+   
     return (
-     
-        <div>
             <div className= {state.join(' ')}>        
-            <a href="" >Home</a>
-            <a href="">Courses</a>
-            <a href="">Contact</a>
-            <a href="">About</a>
-             <a   className="icon" onClick={navBarHandler}>
+            <div>Home</div>
+            <Link to="courses-heading-div" smooth={true} duration={1000}><div>Courses</div></Link>
+            <Link to="contact-div" smooth={true} duration={1000}><div>Contact</div></Link> 
+            <div>About</div>
+             <div  className="icon" onClick={navBarHandler}>
              <HorizontalSplitIcon/>
-             </a>
              </div>
-        </div>
+             </div>
     )
 }
 

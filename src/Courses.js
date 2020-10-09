@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import CourseCard from './CourseCard';
 import './CourseCard.css';
 import cardDetails from './Data';
@@ -6,10 +6,10 @@ import cardDetails from './Data';
 
 export default function Courses(props) {
 const [cardContent,setCardContent] = useState({cardDetails})
-
+    
   return(
 
-    <div className="course-card-display" >
+    <div  className="course-card-display" >
 
         <CourseCard courseName = {cardContent.cardDetails.courseName.pythonMl} courseImg={cardContent.cardDetails.instImg.sumit} 
         InstName = {cardContent.cardDetails.instName.sumit} backGroundImg={cardContent.cardDetails.cardBackgroundImg.backGroudPythonBlueImg} 
