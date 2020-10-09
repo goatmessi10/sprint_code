@@ -19,7 +19,7 @@ const Register = () => {
 
     const handleModal = ()=>{
         const currentState = state.show ;
-        setstate({show : !currentState}) ;
+        setstate({show : !currentState});
     }
     const handleData =()=>{
     db.collection("users").add({
@@ -34,8 +34,7 @@ const Register = () => {
 
   
     return (
-        <div >
-          
+
             <button className="registeration-button" onClick={()=>handleModal()} > Register </button>
             {/* <Input value={input} onChange={event=>setInput(event.target.value)}/> */}
             <Modal className='register-popup-back' show={state.show} >
@@ -65,10 +64,12 @@ const Register = () => {
         </NativeSelect>
         
         <div style={{margin :'5px',padding:'inherit'}}>
-        <Button disabled={!(name.length>1 && email.length>1)}  style={{marginRight:'10px' }} onClick={()=>handleData()}>Enter</Button>
+        <Button style={{marginRight:'10px' }} onClick = {()=>handleModal()} >Enter</Button>
         <Button onClick={()=>handleModal()}>Close</Button>
         </div>
-        </Modal.Body>  
+            </Modal.Body>
+               
+        
             </Modal>
         </div>
     )

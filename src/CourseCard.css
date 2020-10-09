@@ -65,6 +65,25 @@
 .orange{
     color: #f2734c !important;
 }
+.course-explore-button{
+    background: linear-gradient(94.08deg,#f6430f,#ee9f15);
+    font-family: Muli,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    min-width: 50px;
+    border-radius: 22px;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 50px;
+}
 
 
 
