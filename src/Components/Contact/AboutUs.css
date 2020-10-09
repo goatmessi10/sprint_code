@@ -2,9 +2,13 @@
     height: 300px;
     width: 100%;
     color : #c9c0c0 ;
-    padding: 20px;
     margin: auto;
-    
+}
+.aboutus-div-3{
+    height: 300px;
+    width: 100%;
+    color : #c9c0c0 ;
+    margin: auto;
 }
 .right-border{
     border-right: 1px solid; 
@@ -16,12 +20,33 @@
     margin: auto;
 }
 
-.p-tag{
-font-weight: 50;
-text-shadow: white;
-}
 
 .warpper-div{
     padding: 20px;
     display: flex;
+   
 }
+
+@media only screen and (max-width: 755px) {
+    .warpper-div{
+        padding: 20px;
+        display: block;  
+    }
+    .aboutus-div{
+        border-bottom: 1px solid; 
+        margin-bottom: 30px;
+    }
+    .right-border{
+        border-right: 0px; 
+    }
+    .div-content{
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 88%;
+    }
+    .div-content::-webkit-scrollbar{
+        display: none;
+    }
+    
+  }

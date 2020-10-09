@@ -7,11 +7,11 @@ export const Contact = () => {
     return (
         <div className='main-div' >
             <div className='warpper-div'>
-         <Intro/> 
-         <AboutUs/> 
-         <Reach/>
-         </div>
-            </div>
+            <Intro/> 
+            <AboutUs/> 
+            <Reach/>
+             </div>
+        </div>
      
     )
 }
