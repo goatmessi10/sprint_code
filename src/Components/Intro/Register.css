@@ -1,5 +1,5 @@
 .register-popup-back{
-  background-image: url("./introAssets/registerBack.jpg");
+  background-color: black 0.5;
   max-width: 100%;
   max-height: 100%;
 }
@@ -17,7 +17,6 @@
 }
 
 .registeration-button{
-    /* color: #fff; */
     background :linear-gradient(94.08deg,#f6430f,#ee9f15);
     font-family: Muli,Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -34,10 +33,3 @@
     cursor: pointer;
   
 }
-
-/* .registeration-button:hover{
-  color: #fff;
-  background-color: #de4747;
-  box-shadow: 2px 3px 6px grey;
-} */
-

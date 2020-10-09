@@ -3,7 +3,7 @@ import sagarImg from './Assets/images/sagar.jpg';
 import sumitImg from './Assets/images/sumit.jpeg';
 import backGroudJavaPurpleImg from './Assets/templatesample/java2.png';
 import backGroudJavaRedImg from './Assets/templatesample/java4.png';
-import backGroudCppBlueImg from './Assets/templatesample/c++1.png';
+import backGroudCppBlueImg from './Assets/templatesample/c++2.png';
 import backGroudCppGreenImg from './Assets/templatesample/c++6.png';
 import backGroudPythonBlueImg from './Assets/templatesample/python1.png';
 import backGroudPythonYellowImg from './Assets/templatesample/python3.png';
