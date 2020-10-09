@@ -1,13 +1,15 @@
 .course-curriculum-popup-backgroud{
-    background: rgba(0,0,0, .5);
-    position: fixed;
-    z-index: 3;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .course-curriculum-popup-cointainer{
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;

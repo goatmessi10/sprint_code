@@ -8,8 +8,8 @@ function CurriculumCard(props) {
     curriculumItems = (
         <ul>
              { 
-               props.CurriculumItems.map( item => {
-                   return <li> {item} </li> 
+               props.CurriculumItems.map( (item,index) => {
+                   return <li key={index}> {item} </li> 
                })
              } 
         </ul>
