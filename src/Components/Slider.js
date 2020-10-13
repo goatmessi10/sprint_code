@@ -21,9 +21,6 @@ export default function Slider() {
              src={news}
              alt="First "
           />
-          <Carousel.Caption>
-            <h3 style={{color: 'black'}} >Shining on News Paper</h3>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img

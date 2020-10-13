@@ -26,7 +26,7 @@
 .week-cointainer{
     overflow-x: hidden;
     overflow-y: auto;
-    height: inherit;
+    height: 90%;
 }
 
 /* .week-cointainer::-webkit-scrollbar{
@@ -46,6 +46,8 @@
 @media (max-width: 500px)
 {
     .course-curriculum-popup-cointainer {
-        width: 85%;
+        width: 70%;
+        padding-bottom: 30px;
+        height: 70%;
     }
 }

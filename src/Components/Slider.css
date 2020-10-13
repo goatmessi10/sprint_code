@@ -1,4 +1,12 @@
 .img-slider-height{
-height: 400px;
-width: 100%;
+height: 380px;
+width: 60%;
+/* box-shadow:  6px 5px 5px 0px black; */
 }
+
+@media only screen and (max-width: 500px) {
+    .img-slider-height{
+        height: 200px;
+        width: 90%;
+        }
+  }

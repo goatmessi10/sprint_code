@@ -83,6 +83,7 @@
     position: absolute;
     margin-top: 170px;
     margin-left: 50px;
+    z-index: 10;
 }
 
 
