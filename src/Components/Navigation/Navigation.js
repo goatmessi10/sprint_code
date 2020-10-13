@@ -1,33 +1,21 @@
-import HorizontalSplitIcon from '@material-ui/icons/HorizontalSplit';
-import React, { useState } from 'react';
-import './Navigation.css';
-import {Link} from 'react-scroll'
-const Navigation =()=> {
-    let navBarClass = ["topnav"]
-     const [state, setstate] = useState(navBarClass)
-    
-    const navBarHandler = ()=>{
-        let navBarChanged = [...state];
-         if (navBarChanged.length===1) {
-        navBarChanged.push("responsive");
-        } 
-        else{
-        navBarChanged.pop();
-            }
-        setstate(navBarChanged);
-    }
-   
+import { Link } from 'react-scroll';
+import React from 'react'
+import { Nav, Navbar } from 'react-bootstrap'
+
+const Navigation = () => {
     return (
-            <div className= {state.join(' ')}>        
-            <div>Home</div>
-            <Link to="courses-heading-div" smooth={true} duration={1000}><div>Courses</div></Link>
-            <Link to="contact-div" smooth={true} duration={1000}><div>Contact</div></Link> 
-            <div>About</div>
-             <div  className="icon" onClick={navBarHandler}>
-             <HorizontalSplitIcon/>
-             </div>
-             </div>
+        <Navbar bg="light" expand="lg">
+  <Navbar.Brand href="#home">Sprint Code</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+     <Link><Nav.Link>Home</Nav.Link></Link> 
+     <Link to="courses-heading-div"  smooth={true} duration="1000"><Nav.Link >Courses</Nav.Link></Link> 
+     <Link to="contact-div"  smooth={true} duration="1000"><Nav.Link>Contact</Nav.Link></Link> 
+      <Nav.Link href="#link">About</Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
     )
 }
-
-export default Navigation
+export default Navigation;

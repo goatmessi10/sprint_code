@@ -34,9 +34,8 @@ const Register = () => {
 
   
     return (
-
+            <div>
             <button className="registeration-button" onClick={()=>handleModal()} > Register </button>
-            {/* <Input value={input} onChange={event=>setInput(event.target.value)}/> */}
             <Modal className='register-popup-back' show={state.show} >
                <Modal.Body className='register-pop-up'>
             <div>
@@ -64,7 +63,7 @@ const Register = () => {
         </NativeSelect>
         
         <div style={{margin :'5px',padding:'inherit'}}>
-        <Button style={{marginRight:'10px' }} onClick = {()=>handleModal()} >Enter</Button>
+        <Button disabled={ !(name && email)} style={{marginRight:'10px' }} onClick = {()=>handleModal()} >Enter</Button>
         <Button onClick={()=>handleModal()}>Close</Button>
         </div>
             </Modal.Body>
